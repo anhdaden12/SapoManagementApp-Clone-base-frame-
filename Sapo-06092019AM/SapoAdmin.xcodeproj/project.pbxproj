@@ -1,0 +1,920 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61045AF22301A766003BE401 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61045AF12301A766003BE401 /* TabBarViewController.swift */; };
+		61045AF42301A996003BE401 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61045AF32301A996003BE401 /* NotificationViewController.swift */; };
+		61045AF62301A9B5003BE401 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61045AF52301A9B5003BE401 /* Notification.storyboard */; };
+		61045AF82301A9DE003BE401 /* PartnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61045AF72301A9DE003BE401 /* PartnerViewController.swift */; };
+		61045AFA2301A9EE003BE401 /* Partner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61045AF92301A9EE003BE401 /* Partner.storyboard */; };
+		610980262317B6CB002E07A2 /* AdjusttimePageViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610980252317B6CB002E07A2 /* AdjusttimePageViewVC.swift */; };
+		610980282317B715002E07A2 /* DayTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610980272317B715002E07A2 /* DayTableVC.swift */; };
+		6109802A2317B71D002E07A2 /* WeekTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610980292317B71D002E07A2 /* WeekTableVC.swift */; };
+		6109802C2317B724002E07A2 /* MonthTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109802B2317B724002E07A2 /* MonthTableVC.swift */; };
+		6109802E2317B72A002E07A2 /* CustomizeTimeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109802D2317B72A002E07A2 /* CustomizeTimeTableVC.swift */; };
+		610CB4C2231DFD9900AE8266 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610CB4C1231DFD9900AE8266 /* NoticeViewController.swift */; };
+		610CB4C4231DFDE200AE8266 /* RealIncomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610CB4C3231DFDE200AE8266 /* RealIncomeVC.swift */; };
+		6110C24C23180E8C000A4E85 /* UserDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110C24B23180E8C000A4E85 /* UserDefaultHelper.swift */; };
+		6110C24E231811A0000A4E85 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110C24D231811A0000A4E85 /* TimeCell.swift */; };
+		6110C2502318133E000A4E85 /* ViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110C24F2318133E000A4E85 /* ViewController+Extension.swift */; };
+		6110C252231817D9000A4E85 /* BaseCustomizeTimeTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6110C251231817D9000A4E85 /* BaseCustomizeTimeTableVC.swift */; };
+		611EB3202302FB7600EF5385 /* ViewControllerDescriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611EB31F2302FB7600EF5385 /* ViewControllerDescriptions.swift */; };
+		613047812315E85000F651F4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613047802315E85000F651F4 /* LoginVC.swift */; };
+		616D30CD230D43C9009D662B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30CC230D43C9009D662B /* File.swift */; };
+		616D30CF230D469C009D662B /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30CE230D469C009D662B /* AddModel.swift */; };
+		616D30D7230D595B009D662B /* FormatterNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30D3230D595B009D662B /* FormatterNumber.swift */; };
+		616D30DA230D595B009D662B /* TextFieldEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30D6230D595B009D662B /* TextFieldEffects.swift */; };
+		616D30E6230D59F6009D662B /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30E5230D59F5009D662B /* CornerRadius.swift */; };
+		616D30EC230D5AAB009D662B /* ProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30E7230D5AAA009D662B /* ProductTableViewController.swift */; };
+		616D30ED230D5AAB009D662B /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30E8230D5AAA009D662B /* AddProductViewController.swift */; };
+		616D30EE230D5AAB009D662B /* CsanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30E9230D5AAA009D662B /* CsanViewController.swift */; };
+		616D30EF230D5AAB009D662B /* NumpadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30EA230D5AAB009D662B /* NumpadViewController.swift */; };
+		616D30F0230D5AAB009D662B /* AddProductTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D30EB230D5AAB009D662B /* AddProductTableVC.swift */; };
+		617F8E6C2320A0360095711D /* JumpTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E6B2320A0360095711D /* JumpTextField.swift */; };
+		617F8E722320A1440095711D /* DetailProductTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E6D2320A1440095711D /* DetailProductTableVC.swift */; };
+		617F8E732320A1440095711D /* AddPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E6E2320A1440095711D /* AddPropertyViewController.swift */; };
+		617F8E752320A1440095711D /* DescriptionProductVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E702320A1440095711D /* DescriptionProductVC.swift */; };
+		617F8E782320A1730095711D /* ProductAttribute.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617F8E772320A1720095711D /* ProductAttribute.storyboard */; };
+		617F8E7A2320A1930095711D /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617F8E792320A1930095711D /* Product.storyboard */; };
+		617F8E802320A2620095711D /* DetailProductVersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E7E2320A2620095711D /* DetailProductVersionTableViewCell.swift */; };
+		617F8E812320A2620095711D /* ControllerProductVersionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E7F2320A2620095711D /* ControllerProductVersionTableViewCell.swift */; };
+		617F8E842320A28C0095711D /* AddProductWithPropertyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E822320A28C0095711D /* AddProductWithPropertyVC.swift */; };
+		617F8E852320A28C0095711D /* PopUpShowEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E832320A28C0095711D /* PopUpShowEditVC.swift */; };
+		617F8E8A2320A2BE0095711D /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E862320A2BE0095711D /* CollectionViewCell.swift */; };
+		617F8E8B2320A2BE0095711D /* AddPropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E872320A2BE0095711D /* AddPropertyCell.swift */; };
+		617F8E8C2320A2BE0095711D /* DetailPropertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E882320A2BE0095711D /* DetailPropertyCell.swift */; };
+		617F8E8D2320A2BE0095711D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617F8E892320A2BE0095711D /* TableViewCell.swift */; };
+		61C11F142317728100EF628E /* AdjustTimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C11F132317728100EF628E /* AdjustTimeVC.swift */; };
+		61D369002321D0A8003DCFD9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D368FF2321D0A8003DCFD9 /* UIView+Extension.swift */; };
+		61DF44622316854E00D651D9 /* FinancialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF445D2316854D00D651D9 /* FinancialViewController.swift */; };
+		61DF44632316854E00D651D9 /* ReportTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF445E2316854D00D651D9 /* ReportTableViewController.swift */; };
+		61DF44642316854E00D651D9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF445F2316854D00D651D9 /* PageViewController.swift */; };
+		61DF44652316854E00D651D9 /* WarehouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF44602316854D00D651D9 /* WarehouseViewController.swift */; };
+		61DF44662316854E00D651D9 /* SaleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DF44612316854D00D651D9 /* SaleViewController.swift */; };
+		61E30D8223156DD00091E099 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E30D8123156DD00091E099 /* AlertHelper.swift */; };
+		61FD51912321160F00931FCB /* NumberPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61FD51902321160F00931FCB /* NumberPad.storyboard */; };
+		EB6371A022F3AB8700C5B5E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB63719F22F3AB8700C5B5E6 /* AppDelegate.swift */; };
+		EB6371A522F3AB8700C5B5E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371A322F3AB8700C5B5E6 /* Main.storyboard */; };
+		EB6371A822F3AB8700C5B5E6 /* SapoAdmin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB6371A622F3AB8700C5B5E6 /* SapoAdmin.xcdatamodeld */; };
+		EB6371AA22F3AB8800C5B5E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB6371A922F3AB8800C5B5E6 /* Assets.xcassets */; };
+		EB6371AD22F3AB8800C5B5E6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371AB22F3AB8800C5B5E6 /* LaunchScreen.storyboard */; };
+		EB6371D222F3ACDA00C5B5E6 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371D122F3ACDA00C5B5E6 /* Home.storyboard */; };
+		EB6371D422F3AE0100C5B5E6 /* Order.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371D322F3AE0100C5B5E6 /* Order.storyboard */; };
+		EB6371D822F3B11500C5B5E6 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371D722F3B11500C5B5E6 /* Report.storyboard */; };
+		EB6371DA22F3B21900C5B5E6 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB6371D922F3B21900C5B5E6 /* More.storyboard */; };
+		EB6371E222F3B7D900C5B5E6 /* MoreTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6371E122F3B7D900C5B5E6 /* MoreTableVC.swift */; };
+		EB6371E422F3BA9E00C5B5E6 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6371E322F3BA9E00C5B5E6 /* HomeTableViewController.swift */; };
+		EB6371E622F3BAAC00C5B5E6 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6371E522F3BAAC00C5B5E6 /* OrderTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB6371B422F3AB8900C5B5E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB63719422F3AB8700C5B5E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB63719B22F3AB8700C5B5E6;
+			remoteInfo = SapoAdmin;
+		};
+		EB6371BF22F3AB8900C5B5E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB63719422F3AB8700C5B5E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB63719B22F3AB8700C5B5E6;
+			remoteInfo = SapoAdmin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61045AF12301A766003BE401 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		61045AF32301A996003BE401 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		61045AF52301A9B5003BE401 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		61045AF72301A9DE003BE401 /* PartnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerViewController.swift; sourceTree = "<group>"; };
+		61045AF92301A9EE003BE401 /* Partner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Partner.storyboard; sourceTree = "<group>"; };
+		610980252317B6CB002E07A2 /* AdjusttimePageViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjusttimePageViewVC.swift; sourceTree = "<group>"; };
+		610980272317B715002E07A2 /* DayTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTableVC.swift; sourceTree = "<group>"; };
+		610980292317B71D002E07A2 /* WeekTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekTableVC.swift; sourceTree = "<group>"; };
+		6109802B2317B724002E07A2 /* MonthTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthTableVC.swift; sourceTree = "<group>"; };
+		6109802D2317B72A002E07A2 /* CustomizeTimeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeTimeTableVC.swift; sourceTree = "<group>"; };
+		610CB4C1231DFD9900AE8266 /* NoticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		610CB4C3231DFDE200AE8266 /* RealIncomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealIncomeVC.swift; sourceTree = "<group>"; };
+		6110C24B23180E8C000A4E85 /* UserDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultHelper.swift; sourceTree = "<group>"; };
+		6110C24D231811A0000A4E85 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		6110C24F2318133E000A4E85 /* ViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Extension.swift"; sourceTree = "<group>"; };
+		6110C251231817D9000A4E85 /* BaseCustomizeTimeTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCustomizeTimeTableVC.swift; sourceTree = "<group>"; };
+		611EB31F2302FB7600EF5385 /* ViewControllerDescriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDescriptions.swift; sourceTree = "<group>"; };
+		613047802315E85000F651F4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		616D30CC230D43C9009D662B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		616D30CE230D469C009D662B /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddModel.swift; path = SapoAdmin/Settings/AddModel.swift; sourceTree = SOURCE_ROOT; };
+		616D30D3230D595B009D662B /* FormatterNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatterNumber.swift; sourceTree = "<group>"; };
+		616D30D6230D595B009D662B /* TextFieldEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldEffects.swift; sourceTree = "<group>"; };
+		616D30E5230D59F5009D662B /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		616D30E7230D5AAA009D662B /* ProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewController.swift; sourceTree = "<group>"; };
+		616D30E8230D5AAA009D662B /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		616D30E9230D5AAA009D662B /* CsanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CsanViewController.swift; sourceTree = "<group>"; };
+		616D30EA230D5AAB009D662B /* NumpadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumpadViewController.swift; sourceTree = "<group>"; };
+		616D30EB230D5AAB009D662B /* AddProductTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductTableVC.swift; sourceTree = "<group>"; };
+		617F8E6B2320A0360095711D /* JumpTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JumpTextField.swift; sourceTree = "<group>"; };
+		617F8E6D2320A1440095711D /* DetailProductTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProductTableVC.swift; sourceTree = "<group>"; };
+		617F8E6E2320A1440095711D /* AddPropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPropertyViewController.swift; sourceTree = "<group>"; };
+		617F8E702320A1440095711D /* DescriptionProductVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionProductVC.swift; sourceTree = "<group>"; };
+		617F8E772320A1720095711D /* ProductAttribute.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProductAttribute.storyboard; sourceTree = "<group>"; };
+		617F8E792320A1930095711D /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		617F8E7E2320A2620095711D /* DetailProductVersionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailProductVersionTableViewCell.swift; sourceTree = "<group>"; };
+		617F8E7F2320A2620095711D /* ControllerProductVersionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerProductVersionTableViewCell.swift; sourceTree = "<group>"; };
+		617F8E822320A28C0095711D /* AddProductWithPropertyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductWithPropertyVC.swift; sourceTree = "<group>"; };
+		617F8E832320A28C0095711D /* PopUpShowEditVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpShowEditVC.swift; sourceTree = "<group>"; };
+		617F8E862320A2BE0095711D /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		617F8E872320A2BE0095711D /* AddPropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPropertyCell.swift; sourceTree = "<group>"; };
+		617F8E882320A2BE0095711D /* DetailPropertyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPropertyCell.swift; sourceTree = "<group>"; };
+		617F8E892320A2BE0095711D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		61C11F132317728100EF628E /* AdjustTimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdjustTimeVC.swift; sourceTree = "<group>"; };
+		61D368FF2321D0A8003DCFD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		61DF445D2316854D00D651D9 /* FinancialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinancialViewController.swift; sourceTree = "<group>"; };
+		61DF445E2316854D00D651D9 /* ReportTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportTableViewController.swift; sourceTree = "<group>"; };
+		61DF445F2316854D00D651D9 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		61DF44602316854D00D651D9 /* WarehouseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarehouseViewController.swift; sourceTree = "<group>"; };
+		61DF44612316854D00D651D9 /* SaleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleViewController.swift; sourceTree = "<group>"; };
+		61E30D8123156DD00091E099 /* AlertHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
+		61FD51902321160F00931FCB /* NumberPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NumberPad.storyboard; sourceTree = "<group>"; };
+		EB63719C22F3AB8700C5B5E6 /* SapoAdmin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SapoAdmin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB63719F22F3AB8700C5B5E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB6371A422F3AB8700C5B5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB6371A722F3AB8700C5B5E6 /* SapoAdmin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SapoAdmin.xcdatamodel; sourceTree = "<group>"; };
+		EB6371A922F3AB8800C5B5E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB6371AC22F3AB8800C5B5E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB6371AE22F3AB8800C5B5E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB6371B322F3AB8900C5B5E6 /* SapoAdminTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapoAdminTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6371BE22F3AB8900C5B5E6 /* SapoAdminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SapoAdminUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB6371D122F3ACDA00C5B5E6 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EB6371D322F3AE0100C5B5E6 /* Order.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Order.storyboard; sourceTree = "<group>"; };
+		EB6371D722F3B11500C5B5E6 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		EB6371D922F3B21900C5B5E6 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		EB6371E122F3B7D900C5B5E6 /* MoreTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableVC.swift; sourceTree = "<group>"; };
+		EB6371E322F3BA9E00C5B5E6 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		EB6371E522F3BAAC00C5B5E6 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB63719922F3AB8700C5B5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371B022F3AB8900C5B5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371BB22F3AB8900C5B5E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		610980242317B687002E07A2 /* AdjustimeVC */ = {
+			isa = PBXGroup;
+			children = (
+				61C11F132317728100EF628E /* AdjustTimeVC.swift */,
+				6110C24D231811A0000A4E85 /* TimeCell.swift */,
+				610980252317B6CB002E07A2 /* AdjusttimePageViewVC.swift */,
+				610980272317B715002E07A2 /* DayTableVC.swift */,
+				610980292317B71D002E07A2 /* WeekTableVC.swift */,
+				6109802B2317B724002E07A2 /* MonthTableVC.swift */,
+				6109802D2317B72A002E07A2 /* CustomizeTimeTableVC.swift */,
+				6110C251231817D9000A4E85 /* BaseCustomizeTimeTableVC.swift */,
+			);
+			path = AdjustimeVC;
+			sourceTree = "<group>";
+		};
+		6109802F2317D8BD002E07A2 /* RealMoneyIncomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				610CB4C3231DFDE200AE8266 /* RealIncomeVC.swift */,
+				610CB4C1231DFD9900AE8266 /* NoticeViewController.swift */,
+			);
+			path = RealMoneyIncomeVC;
+			sourceTree = "<group>";
+		};
+		613047822315EA8F00F651F4 /* MoreTableVC */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoreTableVC;
+			sourceTree = "<group>";
+		};
+		616D30CB230D43B9009D662B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				616D30CC230D43C9009D662B /* File.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		616D30DC230D599C009D662B /* ProductTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				616D30E8230D5AAA009D662B /* AddProductViewController.swift */,
+				616D30E9230D5AAA009D662B /* CsanViewController.swift */,
+				616D30EB230D5AAB009D662B /* AddProductTableVC.swift */,
+				617F8E7C2320A23F0095711D /* AddProductWithPropertyVC */,
+				616D30EA230D5AAB009D662B /* NumpadViewController.swift */,
+				616D30E7230D5AAA009D662B /* ProductTableViewController.swift */,
+				617F8E6E2320A1440095711D /* AddPropertyViewController.swift */,
+				617F8E702320A1440095711D /* DescriptionProductVC.swift */,
+				617F8E6D2320A1440095711D /* DetailProductTableVC.swift */,
+				617F8E7B2320A22F0095711D /* TableViewCellInProducTableViewController */,
+			);
+			path = ProductTableViewController;
+			sourceTree = "<group>";
+		};
+		617F8E7B2320A22F0095711D /* TableViewCellInProducTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				617F8E872320A2BE0095711D /* AddPropertyCell.swift */,
+				617F8E862320A2BE0095711D /* CollectionViewCell.swift */,
+				617F8E882320A2BE0095711D /* DetailPropertyCell.swift */,
+				617F8E892320A2BE0095711D /* TableViewCell.swift */,
+			);
+			path = TableViewCellInProducTableViewController;
+			sourceTree = "<group>";
+		};
+		617F8E7C2320A23F0095711D /* AddProductWithPropertyVC */ = {
+			isa = PBXGroup;
+			children = (
+				617F8E7D2320A24D0095711D /* CellInAddProductWithPropertyVC */,
+				617F8E822320A28C0095711D /* AddProductWithPropertyVC.swift */,
+				617F8E832320A28C0095711D /* PopUpShowEditVC.swift */,
+			);
+			path = AddProductWithPropertyVC;
+			sourceTree = "<group>";
+		};
+		617F8E7D2320A24D0095711D /* CellInAddProductWithPropertyVC */ = {
+			isa = PBXGroup;
+			children = (
+				617F8E7F2320A2620095711D /* ControllerProductVersionTableViewCell.swift */,
+				617F8E7E2320A2620095711D /* DetailProductVersionTableViewCell.swift */,
+			);
+			path = CellInAddProductWithPropertyVC;
+			sourceTree = "<group>";
+		};
+		61DF445C2316853200D651D9 /* ReportTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6109802F2317D8BD002E07A2 /* RealMoneyIncomeVC */,
+				610980242317B687002E07A2 /* AdjustimeVC */,
+				61DF445F2316854D00D651D9 /* PageViewController.swift */,
+				61DF445E2316854D00D651D9 /* ReportTableViewController.swift */,
+				61DF445D2316854D00D651D9 /* FinancialViewController.swift */,
+				61DF44612316854D00D651D9 /* SaleViewController.swift */,
+				61DF44602316854D00D651D9 /* WarehouseViewController.swift */,
+			);
+			path = ReportTableViewController;
+			sourceTree = "<group>";
+		};
+		EB63719322F3AB8700C5B5E6 = {
+			isa = PBXGroup;
+			children = (
+				EB63719E22F3AB8700C5B5E6 /* SapoAdmin */,
+				EB63719D22F3AB8700C5B5E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB63719D22F3AB8700C5B5E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB63719C22F3AB8700C5B5E6 /* SapoAdmin.app */,
+				EB6371B322F3AB8900C5B5E6 /* SapoAdminTests.xctest */,
+				EB6371BE22F3AB8900C5B5E6 /* SapoAdminUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB63719E22F3AB8700C5B5E6 /* SapoAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				616D30CB230D43B9009D662B /* Settings */,
+				EB6371DE22F3B38000C5B5E6 /* Extension */,
+				EB6371DD22F3B36300C5B5E6 /* Controller */,
+				EB6371DC22F3B35900C5B5E6 /* View */,
+				EB6371DB22F3B35200C5B5E6 /* Model */,
+				EB6371D022F3ACB500C5B5E6 /* StoryBoard */,
+				EB63719F22F3AB8700C5B5E6 /* AppDelegate.swift */,
+				EB6371A922F3AB8800C5B5E6 /* Assets.xcassets */,
+				EB6371AB22F3AB8800C5B5E6 /* LaunchScreen.storyboard */,
+				EB6371AE22F3AB8800C5B5E6 /* Info.plist */,
+				EB6371A622F3AB8700C5B5E6 /* SapoAdmin.xcdatamodeld */,
+			);
+			path = SapoAdmin;
+			sourceTree = "<group>";
+		};
+		EB6371D022F3ACB500C5B5E6 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				EB6371A322F3AB8700C5B5E6 /* Main.storyboard */,
+				EB6371D122F3ACDA00C5B5E6 /* Home.storyboard */,
+				EB6371D322F3AE0100C5B5E6 /* Order.storyboard */,
+				617F8E792320A1930095711D /* Product.storyboard */,
+				617F8E772320A1720095711D /* ProductAttribute.storyboard */,
+				EB6371D722F3B11500C5B5E6 /* Report.storyboard */,
+				EB6371D922F3B21900C5B5E6 /* More.storyboard */,
+				61045AF52301A9B5003BE401 /* Notification.storyboard */,
+				61045AF92301A9EE003BE401 /* Partner.storyboard */,
+				61FD51902321160F00931FCB /* NumberPad.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		EB6371DB22F3B35200C5B5E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				616D30CE230D469C009D662B /* AddModel.swift */,
+				616D30E5230D59F5009D662B /* CornerRadius.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EB6371DC22F3B35900C5B5E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB6371DD22F3B36300C5B5E6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61DF445C2316853200D651D9 /* ReportTableViewController */,
+				616D30DC230D599C009D662B /* ProductTableViewController */,
+				61045AF12301A766003BE401 /* TabBarViewController.swift */,
+				EB6371E322F3BA9E00C5B5E6 /* HomeTableViewController.swift */,
+				61045AF72301A9DE003BE401 /* PartnerViewController.swift */,
+				EB6371E522F3BAAC00C5B5E6 /* OrderTableViewController.swift */,
+				61045AF32301A996003BE401 /* NotificationViewController.swift */,
+				EB6371E122F3B7D900C5B5E6 /* MoreTableVC.swift */,
+				613047822315EA8F00F651F4 /* MoreTableVC */,
+				611EB31F2302FB7600EF5385 /* ViewControllerDescriptions.swift */,
+				613047802315E85000F651F4 /* LoginVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EB6371DE22F3B38000C5B5E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				61D368FF2321D0A8003DCFD9 /* UIView+Extension.swift */,
+				616D30D3230D595B009D662B /* FormatterNumber.swift */,
+				616D30D6230D595B009D662B /* TextFieldEffects.swift */,
+				61E30D8123156DD00091E099 /* AlertHelper.swift */,
+				6110C24B23180E8C000A4E85 /* UserDefaultHelper.swift */,
+				6110C24F2318133E000A4E85 /* ViewController+Extension.swift */,
+				617F8E6B2320A0360095711D /* JumpTextField.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB63719B22F3AB8700C5B5E6 /* SapoAdmin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6371C722F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdmin" */;
+			buildPhases = (
+				EB63719822F3AB8700C5B5E6 /* Sources */,
+				EB63719922F3AB8700C5B5E6 /* Frameworks */,
+				EB63719A22F3AB8700C5B5E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SapoAdmin;
+			productName = SapoAdmin;
+			productReference = EB63719C22F3AB8700C5B5E6 /* SapoAdmin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB6371B222F3AB8900C5B5E6 /* SapoAdminTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6371CA22F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdminTests" */;
+			buildPhases = (
+				EB6371AF22F3AB8900C5B5E6 /* Sources */,
+				EB6371B022F3AB8900C5B5E6 /* Frameworks */,
+				EB6371B122F3AB8900C5B5E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6371B522F3AB8900C5B5E6 /* PBXTargetDependency */,
+			);
+			name = SapoAdminTests;
+			productName = SapoAdminTests;
+			productReference = EB6371B322F3AB8900C5B5E6 /* SapoAdminTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB6371BD22F3AB8900C5B5E6 /* SapoAdminUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB6371CD22F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdminUITests" */;
+			buildPhases = (
+				EB6371BA22F3AB8900C5B5E6 /* Sources */,
+				EB6371BB22F3AB8900C5B5E6 /* Frameworks */,
+				EB6371BC22F3AB8900C5B5E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB6371C022F3AB8900C5B5E6 /* PBXTargetDependency */,
+			);
+			name = SapoAdminUITests;
+			productName = SapoAdminUITests;
+			productReference = EB6371BE22F3AB8900C5B5E6 /* SapoAdminUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB63719422F3AB8700C5B5E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Minh Thang";
+				TargetAttributes = {
+					EB63719B22F3AB8700C5B5E6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					EB6371B222F3AB8900C5B5E6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EB63719B22F3AB8700C5B5E6;
+					};
+					EB6371BD22F3AB8900C5B5E6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EB63719B22F3AB8700C5B5E6;
+					};
+				};
+			};
+			buildConfigurationList = EB63719722F3AB8700C5B5E6 /* Build configuration list for PBXProject "SapoAdmin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB63719322F3AB8700C5B5E6;
+			productRefGroup = EB63719D22F3AB8700C5B5E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB63719B22F3AB8700C5B5E6 /* SapoAdmin */,
+				EB6371B222F3AB8900C5B5E6 /* SapoAdminTests */,
+				EB6371BD22F3AB8900C5B5E6 /* SapoAdminUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB63719A22F3AB8700C5B5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB6371D422F3AE0100C5B5E6 /* Order.storyboard in Resources */,
+				61045AFA2301A9EE003BE401 /* Partner.storyboard in Resources */,
+				617F8E782320A1730095711D /* ProductAttribute.storyboard in Resources */,
+				EB6371DA22F3B21900C5B5E6 /* More.storyboard in Resources */,
+				61045AF62301A9B5003BE401 /* Notification.storyboard in Resources */,
+				EB6371D822F3B11500C5B5E6 /* Report.storyboard in Resources */,
+				617F8E7A2320A1930095711D /* Product.storyboard in Resources */,
+				EB6371AD22F3AB8800C5B5E6 /* LaunchScreen.storyboard in Resources */,
+				EB6371AA22F3AB8800C5B5E6 /* Assets.xcassets in Resources */,
+				61FD51912321160F00931FCB /* NumberPad.storyboard in Resources */,
+				EB6371A522F3AB8700C5B5E6 /* Main.storyboard in Resources */,
+				EB6371D222F3ACDA00C5B5E6 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371B122F3AB8900C5B5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371BC22F3AB8900C5B5E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB63719822F3AB8700C5B5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				613047812315E85000F651F4 /* LoginVC.swift in Sources */,
+				EB6371E422F3BA9E00C5B5E6 /* HomeTableViewController.swift in Sources */,
+				61DF44652316854E00D651D9 /* WarehouseViewController.swift in Sources */,
+				6110C252231817D9000A4E85 /* BaseCustomizeTimeTableVC.swift in Sources */,
+				610980262317B6CB002E07A2 /* AdjusttimePageViewVC.swift in Sources */,
+				616D30F0230D5AAB009D662B /* AddProductTableVC.swift in Sources */,
+				61045AF82301A9DE003BE401 /* PartnerViewController.swift in Sources */,
+				616D30EC230D5AAB009D662B /* ProductTableViewController.swift in Sources */,
+				616D30EF230D5AAB009D662B /* NumpadViewController.swift in Sources */,
+				6110C2502318133E000A4E85 /* ViewController+Extension.swift in Sources */,
+				610980282317B715002E07A2 /* DayTableVC.swift in Sources */,
+				6109802C2317B724002E07A2 /* MonthTableVC.swift in Sources */,
+				616D30CF230D469C009D662B /* AddModel.swift in Sources */,
+				610CB4C4231DFDE200AE8266 /* RealIncomeVC.swift in Sources */,
+				EB6371E622F3BAAC00C5B5E6 /* OrderTableViewController.swift in Sources */,
+				EB6371A822F3AB8700C5B5E6 /* SapoAdmin.xcdatamodeld in Sources */,
+				6110C24E231811A0000A4E85 /* TimeCell.swift in Sources */,
+				617F8E6C2320A0360095711D /* JumpTextField.swift in Sources */,
+				617F8E8C2320A2BE0095711D /* DetailPropertyCell.swift in Sources */,
+				617F8E722320A1440095711D /* DetailProductTableVC.swift in Sources */,
+				617F8E8A2320A2BE0095711D /* CollectionViewCell.swift in Sources */,
+				61045AF42301A996003BE401 /* NotificationViewController.swift in Sources */,
+				617F8E842320A28C0095711D /* AddProductWithPropertyVC.swift in Sources */,
+				6110C24C23180E8C000A4E85 /* UserDefaultHelper.swift in Sources */,
+				610CB4C2231DFD9900AE8266 /* NoticeViewController.swift in Sources */,
+				616D30ED230D5AAB009D662B /* AddProductViewController.swift in Sources */,
+				611EB3202302FB7600EF5385 /* ViewControllerDescriptions.swift in Sources */,
+				61E30D8223156DD00091E099 /* AlertHelper.swift in Sources */,
+				616D30DA230D595B009D662B /* TextFieldEffects.swift in Sources */,
+				61D369002321D0A8003DCFD9 /* UIView+Extension.swift in Sources */,
+				617F8E812320A2620095711D /* ControllerProductVersionTableViewCell.swift in Sources */,
+				6109802E2317B72A002E07A2 /* CustomizeTimeTableVC.swift in Sources */,
+				616D30D7230D595B009D662B /* FormatterNumber.swift in Sources */,
+				616D30CD230D43C9009D662B /* File.swift in Sources */,
+				61DF44642316854E00D651D9 /* PageViewController.swift in Sources */,
+				EB6371A022F3AB8700C5B5E6 /* AppDelegate.swift in Sources */,
+				617F8E752320A1440095711D /* DescriptionProductVC.swift in Sources */,
+				617F8E8D2320A2BE0095711D /* TableViewCell.swift in Sources */,
+				616D30EE230D5AAB009D662B /* CsanViewController.swift in Sources */,
+				61DF44662316854E00D651D9 /* SaleViewController.swift in Sources */,
+				61045AF22301A766003BE401 /* TabBarViewController.swift in Sources */,
+				61DF44622316854E00D651D9 /* FinancialViewController.swift in Sources */,
+				617F8E852320A28C0095711D /* PopUpShowEditVC.swift in Sources */,
+				EB6371E222F3B7D900C5B5E6 /* MoreTableVC.swift in Sources */,
+				617F8E732320A1440095711D /* AddPropertyViewController.swift in Sources */,
+				61DF44632316854E00D651D9 /* ReportTableViewController.swift in Sources */,
+				617F8E802320A2620095711D /* DetailProductVersionTableViewCell.swift in Sources */,
+				61C11F142317728100EF628E /* AdjustTimeVC.swift in Sources */,
+				617F8E8B2320A2BE0095711D /* AddPropertyCell.swift in Sources */,
+				616D30E6230D59F6009D662B /* CornerRadius.swift in Sources */,
+				6109802A2317B71D002E07A2 /* WeekTableVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371AF22F3AB8900C5B5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB6371BA22F3AB8900C5B5E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB6371B522F3AB8900C5B5E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB63719B22F3AB8700C5B5E6 /* SapoAdmin */;
+			targetProxy = EB6371B422F3AB8900C5B5E6 /* PBXContainerItemProxy */;
+		};
+		EB6371C022F3AB8900C5B5E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB63719B22F3AB8700C5B5E6 /* SapoAdmin */;
+			targetProxy = EB6371BF22F3AB8900C5B5E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB6371A322F3AB8700C5B5E6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6371A422F3AB8700C5B5E6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB6371AB22F3AB8800C5B5E6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB6371AC22F3AB8800C5B5E6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB6371C522F3AB8900C5B5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB6371C622F3AB8900C5B5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB6371C822F3AB8900C5B5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SapoAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB6371C922F3AB8900C5B5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SapoAdmin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdmin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EB6371CB22F3AB8900C5B5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SapoAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SapoAdmin.app/SapoAdmin";
+			};
+			name = Debug;
+		};
+		EB6371CC22F3AB8900C5B5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SapoAdminTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdminTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SapoAdmin.app/SapoAdmin";
+			};
+			name = Release;
+		};
+		EB6371CE22F3AB8900C5B5E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SapoAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SapoAdmin;
+			};
+			name = Debug;
+		};
+		EB6371CF22F3AB8900C5B5E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56AJJ634ZU;
+				INFOPLIST_FILE = SapoAdminUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Big0.SapoAdminUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SapoAdmin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB63719722F3AB8700C5B5E6 /* Build configuration list for PBXProject "SapoAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6371C522F3AB8900C5B5E6 /* Debug */,
+				EB6371C622F3AB8900C5B5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6371C722F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdmin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6371C822F3AB8900C5B5E6 /* Debug */,
+				EB6371C922F3AB8900C5B5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6371CA22F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdminTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6371CB22F3AB8900C5B5E6 /* Debug */,
+				EB6371CC22F3AB8900C5B5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB6371CD22F3AB8900C5B5E6 /* Build configuration list for PBXNativeTarget "SapoAdminUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB6371CE22F3AB8900C5B5E6 /* Debug */,
+				EB6371CF22F3AB8900C5B5E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB6371A622F3AB8700C5B5E6 /* SapoAdmin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB6371A722F3AB8700C5B5E6 /* SapoAdmin.xcdatamodel */,
+			);
+			currentVersion = EB6371A722F3AB8700C5B5E6 /* SapoAdmin.xcdatamodel */;
+			path = SapoAdmin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB63719422F3AB8700C5B5E6 /* Project object */;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thong bao-->
+        <scene sceneID="f79-kN-EnH">
+            <objects>
+                <tableViewController storyboardIdentifier="NotificationViewController" id="ol3-7P-Aix" customClass="NotificationViewController" customModule="SapoAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gxk-5t-iBy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.88676387069999996" green="0.88389390710000004" blue="0.90414571759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" misplaced="YES" id="abX-lc-vXh">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.88676387069999996" green="0.88389390710000004" blue="0.90414571759999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ol3-7P-Aix" id="eBd-qU-7FF"/>
+                            <outlet property="delegate" destination="ol3-7P-Aix" id="pDx-sw-V6O"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Thong bao" id="sFs-F9-WlL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <size key="freeformSize" width="375" height="800"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MWx-sE-mNF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5020" y="-212.29385307346328"/>
+        </scene>
+        <!--Thông báo-->
+        <scene sceneID="m30-nd-3Nk">
+            <objects>
+                <navigationController storyboardIdentifier="NotificationNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="vwM-ZU-WC1" customClass="NotificationNavigationController" customModule="SapoAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Thông báo" image="ic_tab_bar_notification" id="7ih-Mc-ZgL"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yOy-7r-BKM">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ol3-7P-Aix" kind="relationship" relationship="rootViewController" id="ZU0-0E-dfc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Be8-lM-Kn4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4080.8000000000002" y="-212.74362818590706"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_tab_bar_notification" width="22" height="22"/>
+    </resources>
+</document>

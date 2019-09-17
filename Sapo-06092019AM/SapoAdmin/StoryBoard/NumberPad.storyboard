@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Numpad View Controller-->
+        <scene sceneID="us7-LT-by0">
+            <objects>
+                <viewController storyboardIdentifier="NumpadViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="gsG-dh-SX4" customClass="NumpadViewController" customModule="SapoAdmin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Xh-Rn-cCY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uWy-0F-FJ8">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Agk-xA-Lfr">
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="0.30575770547945208" colorSpace="custom" customColorSpace="sRGB"/>
+                                <blurEffect style="dark"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smf-9k-5xh">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <connections>
+                                    <action selector="clickOutOfView:" destination="gsG-dh-SX4" eventType="touchUpInside" id="wPr-XC-k7W"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="baq-uZ-GEB">
+                                <rect key="frame" x="70" y="114.5" width="628" height="795"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oyf-yA-utz" customClass="View" customModule="SapoAdmin" customModuleProvider="target">
+                                <rect key="frame" x="50" y="94.5" width="668" height="835"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="yHA-Qt-kii">
+                                        <rect key="frame" x="0.0" y="0.0" width="668" height="835"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title text label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKz-al-e3y">
+                                                <rect key="frame" x="0.0" y="0.0" width="668" height="118.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w2D-S6-6br">
+                                                <rect key="frame" x="0.0" y="119.5" width="668" height="118.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n3L-Dz-TcU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="668" height="118.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qUL-UG-dS5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="668" height="118.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CI-Sf-rnx">
+                                                                <rect key="frame" x="628" y="0.0" width="40" height="118.5"/>
+                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="40" id="dFC-8u-S4w"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <state key="normal" image="ic_purchase_order_action_cancel">
+                                                                    <color key="titleColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="clickedDeleteAll:" destination="gsG-dh-SX4" eventType="touchUpInside" id="WX6-c6-1JS"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="qUL-UG-dS5" firstAttribute="leading" secondItem="n3L-Dz-TcU" secondAttribute="leading" id="5G6-YX-k2e"/>
+                                                            <constraint firstAttribute="bottom" secondItem="7CI-Sf-rnx" secondAttribute="bottom" id="KYo-Bm-gRd"/>
+                                                            <constraint firstAttribute="bottom" secondItem="qUL-UG-dS5" secondAttribute="bottom" id="XWL-Nd-w0B"/>
+                                                            <constraint firstItem="qUL-UG-dS5" firstAttribute="top" secondItem="n3L-Dz-TcU" secondAttribute="top" id="cuy-2N-Czq"/>
+                                                            <constraint firstAttribute="trailing" secondItem="qUL-UG-dS5" secondAttribute="trailing" id="fv2-ec-R8g"/>
+                                                            <constraint firstItem="7CI-Sf-rnx" firstAttribute="top" secondItem="n3L-Dz-TcU" secondAttribute="top" id="guf-ja-RYj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="7CI-Sf-rnx" secondAttribute="trailing" id="rpK-9R-lIh"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="wEw-1i-qSK">
+                                                <rect key="frame" x="0.0" y="239" width="668" height="118.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcI-ap-Uab" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <state key="selected" backgroundImage="backgroundButton"/>
+                                                        <state key="highlighted" backgroundImage="backgroundButton"/>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="hwI-oy-542"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fC8-VC-GJQ" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="223" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="4rZ-KC-v7E"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4oF-Ue-vh3" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="446" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="nUk-DF-p33"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="doc-pb-Fbv">
+                                                <rect key="frame" x="0.0" y="358.5" width="668" height="118"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0e8-l5-bW4" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="118"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="Zv3-06-ONB"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FuE-wf-tLi" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="223" y="0.0" width="222" height="118"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="1Ws-ch-PCS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jc-PM-Jq5" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="446" y="0.0" width="222" height="118"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="egT-62-jfE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="UCJ-8h-BGm">
+                                                <rect key="frame" x="0.0" y="477.5" width="668" height="118.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hY6-uW-YeN" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="7G9-dk-dL2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efM-dq-HHp" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="223" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="Rmv-bc-6nf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5k-Zm-M2r" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="446" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="haI-mY-LMJ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-1U-g5w">
+                                                <rect key="frame" x="0.0" y="597" width="668" height="118.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="77L-vc-VZ9" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="000">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="3Lg-BM-smd"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qx-kf-s5O" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="223" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onCLickNumber:" destination="gsG-dh-SX4" eventType="touchUpInside" id="iyI-jP-rHp"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HJV-17-1yl" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="446" y="0.0" width="222" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" image="OrderItemInputDeleteIcon">
+                                                            <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="onClickedDeleteOnce:" destination="gsG-dh-SX4" eventType="touchUpInside" id="2PM-gx-e6v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FIe-Db-Hyh">
+                                                <rect key="frame" x="0.0" y="716.5" width="668" height="118.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlA-2x-zMA" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Huỷ"/>
+                                                        <connections>
+                                                            <action selector="OnclickCancel:" destination="gsG-dh-SX4" eventType="touchUpInside" id="Jsh-Ui-tzu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03w-uc-uEd" customClass="Button" customModule="SapoAdmin" customModuleProvider="target">
+                                                        <rect key="frame" x="334.5" y="0.0" width="333.5" height="118.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Xác nhận"/>
+                                                        <connections>
+                                                            <action selector="conClickConfirm:" destination="gsG-dh-SX4" eventType="touchUpInside" id="kbF-SU-jEO"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="yHA-Qt-kii" secondAttribute="trailing" id="1nQ-fe-xBy"/>
+                                    <constraint firstItem="yHA-Qt-kii" firstAttribute="top" secondItem="Oyf-yA-utz" secondAttribute="top" id="DM5-Y2-D2b"/>
+                                    <constraint firstAttribute="bottom" secondItem="yHA-Qt-kii" secondAttribute="bottom" id="Xrn-UJ-2Ag"/>
+                                    <constraint firstAttribute="height" secondItem="Oyf-yA-utz" secondAttribute="width" multiplier="5/4" id="b5q-It-Wx8"/>
+                                    <constraint firstItem="yHA-Qt-kii" firstAttribute="leading" secondItem="Oyf-yA-utz" secondAttribute="leading" id="mTW-xt-7Ki"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Oyf-yA-utz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mRe-mC-kBQ" secondAttribute="leading" constant="50" id="4Mu-YC-Ldo"/>
+                            <constraint firstItem="mRe-mC-kBQ" firstAttribute="bottom" secondItem="smf-9k-5xh" secondAttribute="bottom" id="8Ae-CP-0no"/>
+                            <constraint firstItem="smf-9k-5xh" firstAttribute="top" secondItem="3Xh-Rn-cCY" secondAttribute="top" id="Eva-Cs-Xnz"/>
+                            <constraint firstItem="Oyf-yA-utz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="3Xh-Rn-cCY" secondAttribute="leading" constant="32" id="GLn-5e-5h9"/>
+                            <constraint firstItem="smf-9k-5xh" firstAttribute="leading" secondItem="mRe-mC-kBQ" secondAttribute="leading" id="HCo-CH-NHG"/>
+                            <constraint firstItem="baq-uZ-GEB" firstAttribute="leading" secondItem="Oyf-yA-utz" secondAttribute="leading" constant="20" id="OC5-vl-nEB"/>
+                            <constraint firstItem="baq-uZ-GEB" firstAttribute="bottom" secondItem="Oyf-yA-utz" secondAttribute="bottom" constant="-20" id="UHC-xK-Bik"/>
+                            <constraint firstItem="Oyf-yA-utz" firstAttribute="centerY" secondItem="3Xh-Rn-cCY" secondAttribute="centerY" id="YDd-7f-phz"/>
+                            <constraint firstItem="uWy-0F-FJ8" firstAttribute="top" secondItem="3Xh-Rn-cCY" secondAttribute="top" id="Ymd-EA-c9R"/>
+                            <constraint firstAttribute="trailing" secondItem="uWy-0F-FJ8" secondAttribute="trailing" id="cxh-3K-UzP"/>
+                            <constraint firstItem="uWy-0F-FJ8" firstAttribute="leading" secondItem="3Xh-Rn-cCY" secondAttribute="leading" id="icX-Ev-9z8"/>
+                            <constraint firstAttribute="bottom" secondItem="uWy-0F-FJ8" secondAttribute="bottom" id="qrd-5F-d9s"/>
+                            <constraint firstItem="baq-uZ-GEB" firstAttribute="trailing" secondItem="Oyf-yA-utz" secondAttribute="trailing" constant="-20" id="uKS-1P-5Sw"/>
+                            <constraint firstItem="baq-uZ-GEB" firstAttribute="top" secondItem="Oyf-yA-utz" secondAttribute="top" constant="20" id="uy1-CK-3Fz"/>
+                            <constraint firstItem="Oyf-yA-utz" firstAttribute="centerX" secondItem="3Xh-Rn-cCY" secondAttribute="centerX" id="wdT-PD-w9N"/>
+                            <constraint firstItem="mRe-mC-kBQ" firstAttribute="trailing" secondItem="smf-9k-5xh" secondAttribute="trailing" id="yNr-lp-Dxx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mRe-mC-kBQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="qUL-UG-dS5" id="7gK-hy-cBi"/>
+                        <outlet property="numberPadView" destination="Oyf-yA-utz" id="3pX-N8-lcR"/>
+                        <outlet property="titleLabel" destination="SKz-al-e3y" id="KMl-T0-2ai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPz-v4-mmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4335.15625" y="122.46093749999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OrderItemInputDeleteIcon" width="32" height="32"/>
+        <image name="backgroundButton" width="16" height="16"/>
+        <image name="ic_purchase_order_action_cancel" width="20" height="20"/>
+    </resources>
+</document>
